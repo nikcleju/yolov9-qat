@@ -29,6 +29,8 @@ cp models/quantize_rules.py "$yolov9_dir/models/quantize_rules.py" && echo "quan
 cp models/quantize.py "$yolov9_dir/models/quantize.py" && echo "quantize.py patched successfully."
 cp scripts/generate_trt_engine.sh "$yolov9_dir/scripts/generate_trt_engine.sh" && echo "generate_trt_engine.sh patched successfully."
 cp scripts/val_trt.sh "$yolov9_dir/scripts/val_trt.sh" && echo "val_trt.sh patched successfully."
+cp scripts/complete_qat_export.sh "$yolov9_dir/scripts/complete_setup.sh" && echo "complete_setup.sh copied successfully."
+cp scripts/complete_qat_export.sh "$yolov9_dir/scripts/complete_qat_export.sh" && echo "complete_qat_export.sh copied successfully."
 cp draw-engine.py "$yolov9_dir/draw-engine.py" && echo "draw-engine.py patched successfully."
 
 echo "Patch applied successfully to YOLOv9 directory: $yolov9_dir"
