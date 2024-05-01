@@ -3,8 +3,8 @@
 # Usage:
 # ./complete_qat_export.sh yolov9-c 640
 
-# Check arguments
-if [ "$#" -ne 2 ]; then
+# Check arguments (2 or 3)
+if [ "$#" -lt 2 ] || [ "$#" -gt 3 ]; then
     echo "Usage: $0 BASEMODEL IMGSZ" >&2
     exit 1
 fi
